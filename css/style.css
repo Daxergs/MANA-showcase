@@ -171,7 +171,6 @@ body
 .exp-right
 {
     width: 50%;
-
 }
 
 .exp-right img
@@ -179,6 +178,8 @@ body
     height: 350px;
     width: 500px;
     float: right;
+    border-radius: 45px;
+    box-shadow: 8px 8px 24px 10px rgba(66, 68, 90, 1);
 }
 
 #faq {
@@ -186,6 +187,8 @@ body
     width: 100%;
     display: flex;
     text-align: center;
+    padding-top: 85px;
+    padding-bottom: 95px;
 }
 
 .faq-heading{
@@ -200,7 +203,7 @@ flex-direction: column;
 }
 
 .hr-line{
-  width: 80%;
+  width: 50%;
   margin: auto;
 }
 
@@ -208,7 +211,7 @@ flex-direction: column;
     color: rgb(255, 255, 255);
     cursor: pointer;
     padding: 30px 120px;
-    width: 80%;
+    width: 60%;
     border: 5px rgb(255, 255, 255) solid;
     outline: none;
     transition: 0.4s;
@@ -216,8 +219,7 @@ flex-direction: column;
 
 .faq-body{
     text-align: center;
-   width: 80%; 
-   padding: auto;
+   width: 75%; 
 }
 
 .active,
@@ -226,7 +228,6 @@ flex-direction: column;
 }
 
 .faq-body {
-    padding: 0 12px;
     background-color: rgb(8, 6, 6);
     display: none;
     overflow: hidden;
@@ -241,4 +242,28 @@ flex-direction: column;
 }
 .active:after {
     content: "\2796";
+}
+
+#projects
+{
+    background-color: white;
+    color: #212529;
+    height: 400px;
+    width: 100%;
+    padding-top: 35px;
+    display: flex;
+    text-align: center;
+}
+
+#projects img
+{
+    height: 350px;
+    width: 700px;
+    box-shadow: 8px 8px 24px 10px rgba(66, 68, 90, 1);  
+}
+
+#projects i
+{
+    font-size: 70px;
+    margin: 160px 250px 250px 250px;
 }
