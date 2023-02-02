@@ -38,10 +38,10 @@ function intro()
 
 function myMove() {
     let elem = document.querySelector(".animate");
-    let pos = 0;
-    let id = setInterval(frame, 0.01);
+    let pos = -900;
+    let id = setInterval(frame, 1);
     function frame() {
-        if (pos == 300) {
+        if (pos == 380) {
             clearInterval(id);
         } else {
             pos++;
