@@ -3,7 +3,11 @@ html
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    overflow: hidden;
+}
+
+::-webkit-scrollbar
+{
+    display: none;
 }
 
 body
