@@ -1,7 +1,7 @@
 html
 {
-    margin: 0 ;
-    padding: 0 auto;
+    margin: 0;
+    padding: 0;
     scroll-behavior: smooth;
 }
 
@@ -10,10 +10,6 @@ body
     background-color: #212529;
     color: white;
     font-family: Arial;
-}
-
-.setter {
-    max-width: 1366px;
 }
 
 .header
@@ -90,8 +86,7 @@ body
 #top {
     height: 400px;
     width: 100%;
-    padding-left: 40px;
-    padding-top: 70px;
+    padding-top: 35px;
     display: flex;
     text-align: center;
 }
@@ -100,6 +95,7 @@ body
 {
     height: 220px;
     width: 220px;
+    margin-left: 35px;
 }
 
 #top h2
@@ -159,8 +155,90 @@ body
 {
     background-color: white;
     color: #212529;
-    height: 590px;
+    height: 400px;
     width: 100%;
-    text-align: center;
     padding-top: 35px;
+    display: flex;
+}
+
+.exp-left
+{
+    width: 40%;
+    text-align: center;
+    margin: 25px;
+}
+
+.exp-right
+{
+    width: 50%;
+
+}
+
+.exp-right img
+{
+    height: 350px;
+    width: 500px;
+    float: right;
+}
+
+#faq {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+
+.faq-heading{
+    border-bottom: #777;
+    padding: 130px 180px;
+}
+
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+.hr-line{
+  width: 80%;
+  margin: auto;
+}
+
+.faq-page {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 30px 120px;
+    width: 80%;
+    border: 5px rgb(255, 255, 255) solid;
+    outline: none;
+    transition: 0.4s;
+}
+
+.faq-body{
+    text-align: center;
+   width: 80%; 
+   padding: auto;
+}
+
+.active,
+.faq-page:hover {
+    background-color: #5c5c5c;
+}
+
+.faq-body {
+    padding: 0 12px;
+    background-color: rgb(8, 6, 6);
+    display: none;
+    overflow: hidden;
+}
+
+.faq-page:after {
+    content: '\02795';
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    float: right;
+
+}
+.active:after {
+    content: "\2796";
 }
