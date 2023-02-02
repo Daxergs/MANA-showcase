@@ -39,7 +39,7 @@ function intro()
 function myMove() {
     let elem = document.querySelector(".animate");
     let pos = -900;
-    let id = setInterval(frame, 1);
+    let id = setInterval(frame, 100/60);
     function frame() {
         if (pos == 380) {
             clearInterval(id);
