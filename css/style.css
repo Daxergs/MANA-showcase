@@ -267,3 +267,9 @@ flex-direction: column;
     font-size: 70px;
     margin: 160px 250px 250px 250px;
 }
+
+#projects button
+{
+    background: none;
+    border:none; 
+}
