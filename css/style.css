@@ -47,9 +47,22 @@ body
     top: 10px;
 }
 
+.animate button
+{
+    -webkit-box-shadow: inset -21px 8px 24px 0px rgba(107, 17, 17, 1);
+-moz-box-shadow: inset -21px 8px 24px 0px rgba(107, 17, 17, 1);
+box-shadow: inset -21px 8px 24px 0px rgba(107, 17, 17, 1);
+text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
+    transition: 1s;
+}
+
 .animate button:hover
 {
+    -webkit-box-shadow: inset 32px 8px 24px 0px rgba(107, 17, 17, 1);
+-moz-box-shadow: inset 32px 8px 24px 0px rgba(107, 17, 17, 1);
+box-shadow: inset 32px 8px 24px 0px rgba(107, 17, 17, 1);
     transform:perspective(5);
+    transition: 1s;
 }
 
 .animate img
