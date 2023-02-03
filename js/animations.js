@@ -1,21 +1,24 @@
 let elem = document.querySelector(".animate");
+let experience = document.getElementById("experience");
+
 function intro()
 {
+    
     let introbox = document.getElementById("container");
     let header = document.querySelector(".header");
     let top = document.getElementById("top");
     let websites = document.getElementById("websites");
     let contact = document.getElementById("contact");
-    let experience = document.getElementById("experience");
     let faq = document.getElementById("faq");
     let projects = document.getElementById("projects");
+    let footer = document.querySelector(".footer");
     let invi = 0;
     let pos = 100;
     let inter = setInterval(up,1);
     let opacity = setInterval(opa,100);
     function up()
     {
-        if(elem.style.left=="390px")
+        if(elem.style.left>="380px")
         {
         if(pos == -500)
         {
@@ -23,7 +26,7 @@ function intro()
         }
         else
         {
-            pos=pos-2;
+            pos=pos-4;
             introbox.style.top=pos+'px';
         }
     }
@@ -45,6 +48,7 @@ function intro()
             experience.style.opacity=invi;
             faq.style.opacity=invi;
             projects.style.opacity=invi;
+            footer.style.opacity=invi;
         }
     }
     }
@@ -58,7 +62,7 @@ function myMove() {
         if (pos == 390) {
             clearInterval(id);
         } else {
-            pos=pos+3;
+            pos=pos+6;
             elem.style.left = pos + 'px';
         }
     }
