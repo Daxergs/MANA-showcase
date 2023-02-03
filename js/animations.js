@@ -4,6 +4,11 @@ function intro()
     let introbox = document.getElementById("container");
     let header = document.querySelector(".header");
     let top = document.getElementById("top");
+    let websites = document.getElementById("websites");
+    let contact = document.getElementById("contact");
+    let experience = document.getElementById("experience");
+    let faq = document.getElementById("faq");
+    let projects = document.getElementById("projects");
     let invi = 0;
     let pos = 100;
     let inter = setInterval(up,1);
@@ -18,7 +23,7 @@ function intro()
         }
         else
         {
-            pos--;
+            pos=pos-2;
             introbox.style.top=pos+'px';
         }
     }
@@ -35,6 +40,11 @@ function intro()
             invi=invi+0.1;
             header.style.opacity=invi;
             top.style.opacity=invi;
+            websites.style.opacity=invi;
+            contact.style.opacity=invi;
+            experience.style.opacity=invi;
+            faq.style.opacity=invi;
+            projects.style.opacity=invi;
         }
     }
     }

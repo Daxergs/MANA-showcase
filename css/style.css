@@ -47,6 +47,11 @@ body
     top: 10px;
 }
 
+.animate button:hover
+{
+    transform:perspective(5);
+}
+
 .animate img
 {
     width: 200px;
@@ -118,6 +123,7 @@ body
     width: 100%;
     text-align: center;
     padding-top: 35px;
+    opacity: 0;
 }
 
 .services
@@ -145,6 +151,18 @@ body
     width: 100%;
     text-align: center;
     font-size: 15px;
+    opacity: 0;
+}
+
+#contact h1:last-of-type
+{
+    transition: 0.5s;
+}
+
+#contact h1:last-of-type:hover
+{
+    text-shadow: 4px 4px 6px rgb(231, 37, 37);
+    transition: 0.5s;
 }
 
 .social
@@ -160,6 +178,7 @@ body
     width: 100%;
     padding-top: 35px;
     display: flex;
+    opacity: 0;
 }
 
 .exp-left
@@ -190,6 +209,7 @@ body
     text-align: center;
     padding-top: 85px;
     padding-bottom: 95px;
+    opacity: 0;
 }
 
 .faq-heading{
@@ -253,6 +273,7 @@ flex-direction: column;
     width: 100%;
     padding-top: 35px;
     text-align: center;
+    opacity: 0;
 }
 
 .projects-slider
