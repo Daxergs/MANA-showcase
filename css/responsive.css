@@ -1,3 +1,25 @@
+@media only screen and (max-width: 1366px) /* Monitory o mniejszej rozdzielczości */
+{
+
+
+    .animate
+    {
+        left: 60px;
+    }
+
+    #projects img
+    {
+        margin-left: 0px;
+    }
+
+    #projects i
+    {
+        margin: 160px 120px 250px 120px;
+    }
+
+    
+}
+
 @media only screen and (max-width: 740px) /* Samsung Galaxy S8+ */
 {
     .animate, #container {

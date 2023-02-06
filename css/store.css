@@ -94,7 +94,7 @@ body
     width: 100%;
     text-align: center;
     opacity: 0;
-    margin-top: 115px;
+    margin: 150px 0px 200px 0px;
 }
 
 .block
@@ -115,13 +115,25 @@ body
     transform: scale(1.05);
 }
 
+.block>h4
+{
+    transition: 1s;
+}
+
+.block:hover>h4
+{
+    color: red;
+    transition: 1s;
+    font-size: 25px;
+}
+
 .block i
 {
     margin: 10px 35px 0px 35px;
     font-size: 100px;
 }
 
-/* -------------- */
+/* ------- Animacja napisu cennika ------- */
 
 .pricing
 {

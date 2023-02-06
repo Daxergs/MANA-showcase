@@ -4,6 +4,8 @@ let header = document.querySelector(".header");
 let footer = document.querySelector(".footer");
 let websites = document.getElementById("websites");
 let services = document.querySelector(".services");
+let introbox = document.getElementById("container");
+
 
 function store()
 {
@@ -27,8 +29,6 @@ function store()
 
 function intro()
 {
-    
-    let introbox = document.getElementById("container");
     let top = document.getElementById("top");
     let contact = document.getElementById("contact");
     let faq = document.getElementById("faq");
@@ -37,6 +37,7 @@ function intro()
     let pos = 100;
     let inter = setInterval(up,1);
     let opacity = setInterval(opa,100);
+    top.style.width="100%";
     function up()
     {
         if(pos == -500)
@@ -73,7 +74,6 @@ function intro()
 }
 
 function myMove() {
-    
     let pos = 900;
     let id = setInterval(frame, 100/60);
     function frame() {
