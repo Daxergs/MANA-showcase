@@ -4,8 +4,9 @@ let header = document.querySelector(".header");
 let footer = document.querySelector(".footer");
 let websites = document.getElementById("websites");
 let services = document.querySelector(".services");
+let servicesx = document.querySelector(".servicesx");
 let introbox = document.getElementById("container");
-
+let footerx = document.querySelector(".footerx");
 
 function store()
 {
@@ -21,8 +22,8 @@ function store()
         {
             opa=opa+0.1;
             header.style.opacity=opa;
-            footer.style.opacity=opa;
-            services.style.opacity=opa;
+            footerx.style.opacity=opa;
+            servicesx.style.opacity=opa;
         }
     }
 }

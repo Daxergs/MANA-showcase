@@ -47,7 +47,7 @@ body
     transform:rotate(5deg);
 }
 
-.footer
+.footerx
 {
     height: 290px;
     margin-top: 15px;
@@ -56,18 +56,18 @@ body
     opacity: 0;
 }
 
-.ft-el 
+.ftx-el 
 {
     width: 33%;
     padding: 25px;
 }
 
-.ft-el p
+.ftx-el p
 {
     font-size: 15px;
 }
 
-.ft-el a
+.ftx-el a
 {
     font-size: 15px;
     text-decoration:none;
@@ -75,7 +75,7 @@ body
     transition: 0.5s;
 }
 
-.ft-el a:hover
+.ftx-el a:hover
 {
     font-size: 35px;
     transition: 0.5s;
@@ -86,7 +86,7 @@ body
     height:5px;
 }
 
-.services
+.servicesx
 {
     display: flex;
     color: white;
@@ -97,7 +97,7 @@ body
     margin: 150px 0px 200px 0px;
 }
 
-.block
+.blockx
 {
     height: 600px;
     width: 25%;
@@ -109,25 +109,25 @@ body
     overflow: hidden;
 }
 
-.block:hover
+.blockx:hover
 {
     transition: 1s;
     transform: scale(1.05);
 }
 
-.block>h4
+.blockx>h4
 {
     transition: 1s;
 }
 
-.block:hover>h4
+.blockx:hover>h4
 {
     color: red;
     transition: 1s;
     font-size: 25px;
 }
 
-.block i
+.blockx i
 {
     margin: 10px 35px 0px 35px;
     font-size: 100px;
