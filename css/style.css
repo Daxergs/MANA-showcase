@@ -45,6 +45,7 @@ body
     letter-spacing: 5px;
     text-align: center;
     top: 10px;
+    left: 350px;
 }
 
 .animate button
@@ -392,6 +393,13 @@ transition: 1s;
     font-size: 15px;
     text-decoration:none;
     color: white;
+    transition: 0.5s;
+}
+
+.ft-el a:hover
+{
+    font-size: 35px;
+    transition: 0.5s;
 }
 
 .fa-sharp
