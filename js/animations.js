@@ -7,6 +7,19 @@ let services = document.querySelector(".services");
 let servicesx = document.querySelector(".servicesx");
 let introbox = document.getElementById("container");
 let footerx = document.querySelector(".footerx");
+let aleft = document.querySelector(".aleft");
+let aright = document.querySelector(".aright");
+
+
+function rar()
+{
+    aright.style="margin-left: 35px;";
+}
+
+function ral()
+{
+    aright.style="margin-left: 0px;";
+}
 
 function store()
 {
