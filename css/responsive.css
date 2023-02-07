@@ -43,15 +43,14 @@
     }
     #top
     {
-        width: 300px;
+        width: 400px;
         display: block;
     }
     .desc
     {
-        float: right;
         max-width: 300px;
     }
-
+    
     .servicesx
     {
         display: block;
