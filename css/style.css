@@ -1,3 +1,31 @@
+
+  
+/* --------- */
+.hidden {
+  opacity:0;
+}
+.console-container {
+  font-size:2em;
+  text-align:center;
+  height:200px;
+  width:600px;
+  display:block;
+  position:absolute;
+  color:white;
+  top: 135px;;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+}
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
+
+/* ------ */
 html
 {
     margin: 0;
@@ -32,11 +60,68 @@ body
     margin-left: 35px;
 }
 
+.header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin: 35px;
+    transition: 1s;
+    float: right;   
+}
+
+.header * {
+    transition: all .35s ease;
+  }
+  
+
+  .header a {
+    padding: .5em .8em;
+    position: relative;
+    text-decoration: none;
+  }
+  
+  .header a::before,
+  .header a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+  }
+  
+  .header a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid red;
+    border-right: 3px solid red;
+    transform: translate(-100%, 50%);
+  }
+  
+  .header a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid red;
+    border-left: 3px solid red;
+    transform: translate(100%, -50%)
+  }
+  
+  .header a:hover:before,
+  .header a:hover:after{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+  
+  .header a:hover {
+    color: red;
+  }
+
 #container {
     width: 100%;
     height: 400px;
     position: absolute;
-    background-color: #212529;
 }
 
 .animate {
@@ -48,7 +133,34 @@ body
     left: 400px;
 }
 
-.animate button
+.btn:after, .btn:before {
+    content: " ";
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    border: 0px solid #610f03;
+    transition: all 1s;
+    border-radius: 10px;
+  }
+  .btn:after {
+    top: -1px;
+    left: -1px;
+    border-top: 5px solid #610f03;
+    border-left: 5px solid #610f03;
+  }
+  .btn:before {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 5px solid #610f03;
+    border-right: 5px solid #610f03;
+  }
+
+  .btn:hover:before, .btn:hover:after {
+    width: 96%;
+    height: 96%;
+  }
+
+  .btn
 {
     -webkit-box-shadow: inset -21px 8px 24px 0px rgba(107, 17, 17, 1);
     -moz-box-shadow: inset -21px 8px 24px 0px rgba(107, 17, 17, 1);
@@ -57,43 +169,20 @@ body
     transition: 1s;
     width: 150px;
     height: 45px;
-    border-radius: 15px;
     color: white;
     background-color: rgb(231, 37, 37);
     transition: 1s;
-    padding: 0;
-}
-
-.animate button:hover
-{
-    -webkit-box-shadow: inset 32px 8px 24px 0px rgba(107, 17, 17, 1);
-    -moz-box-shadow: inset 32px 8px 24px 0px rgba(107, 17, 17, 1);
-    box-shadow: inset 32px 8px 24px 0px rgba(107, 17, 17, 1);
-    transition: 1s;
-    transform: scale(1.2);
-    transition: 1s;
+    cursor: pointer;
+    border-radius: 15px;
+    position: relative;
+    transition: all 1s;
+    border-color: rgba(151, 3, 3, 0.5);
 }
 
 .animate img
 {
     width: 200px;
     height: 150px;
-}
-
-
-.header a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    margin: 35px;
-    transition: 1s;
-    float: right;   
-}
-
-.header a:hover
-{
-    transform:rotate(5deg);
-    transition: 1s;
 }
 
 #top {
@@ -639,3 +728,6 @@ transition: 1s;
     position: absolute;
     width: 180px;
   }
+
+
+/* teskt */
