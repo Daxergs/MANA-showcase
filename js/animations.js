@@ -1,6 +1,6 @@
 let elem = document.querySelector(".animate");
 let experience = document.getElementById("experience");
-let header = document.querySelector(".header");
+let header = document.querySelector("#header");
 let footer = document.querySelector(".footer");
 let websites = document.getElementById("websites");
 let services = document.querySelector(".services");
@@ -9,9 +9,9 @@ let introbox = document.getElementById("container");
 let footerx = document.querySelector(".footerx");
 let aleft = document.querySelector(".aleft");
 let aright = document.querySelector(".aright");
+let pulse = document.querySelector(".btn-arrow-pulse");
 
 consoleText(['Mateusz Nakonieczny'], 'text',['white']);
-
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
   var visible = true;
@@ -22,7 +22,6 @@ function consoleText(words, id, colors) {
   var target = document.getElementById(id)
   target.setAttribute('style', 'color:' + colors[0])
   window.setInterval(function() {
-
     if (letterCount === 0 && waiting === false) {
       waiting = true;
       target.innerHTML = words[0].substring(0, letterCount)
@@ -122,6 +121,7 @@ function intro()
             faq.style.opacity=invi;
             projects.style.opacity=invi;
             footer.style.opacity=invi;
+            pulse.style.opacity=invi;
         }
     }
     }

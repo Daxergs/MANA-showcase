@@ -1,7 +1,5 @@
 @media only screen and (max-width: 1366px) /* Monitory o mniejszej rozdzielczości */
 {
-
-
     .animate
     {
         left: 60px;
@@ -16,8 +14,6 @@
     {
         margin: 160px 120px 250px 120px;
     }
-
-    
 }
 
 @media only screen and (max-width: 740px) /* Samsung Galaxy S8+ */
@@ -26,7 +22,7 @@
     {
         margin-top: 550px;
     }
-    .header
+    #header
     {
         display: none;
     }

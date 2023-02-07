@@ -12,7 +12,7 @@
     <script src="js/translate.js"></script>
 </head>
 <body onload="myMove()">
-        <div class="header">
+        <div id="header">
             <img src="img/logo-no-background.svg">
             <a href="#top">O MNIE</a>
             <a href="#websites">OFERTA</a>
@@ -41,10 +41,13 @@
                 <h1><span>
                     Cześć, jestem</span></h1><br><br>
                     <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
-                <h2>PROGRAMISTA, WEB DEVELOPER, GRAFIK, FREELANCER, INFORMATYK</h2>
+                <h2>PROGRAMISTA, WEB DEVELOPER, GRAFIK, MONTAŻYSTA, FREELANCER</h2>
                 <button class="btn" onclick="intro()">POZNAJMY SIĘ</button>
             </div>
         </div>
+        <a href="#header" class="btn-arrow-pulse">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
         <div id="top">
             <img src="img/avatar.png">
             <div class="desc">
@@ -130,7 +133,7 @@
         </section>
         </div>
         <div id="projects">
-            <h1>Nasze projekty</h1>
+            <h1>Moje projekty</h1>
             <div class="projects-slider">
                 <button onclick="changeleft()" class="aleft"><i class="fa-solid fa-arrow-left"></i></button>
                 <img src="img/site1.png" id="photos">
@@ -158,6 +161,7 @@
                 <a href="#projects">Projekty</a><br>
                 <a href="#faq">FAQ</a><br>
                 <a href="#contact">Kontakt</a><br>
+                <a href="sub/store.html">Cennik</a>
             </div>
         </div>
     <script src="js/animations.js"></script>
