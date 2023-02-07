@@ -1,5 +1,4 @@
 let photo = document.getElementById("photos");
-var i=1;
 function changeleft()
 {
     if(i==1)

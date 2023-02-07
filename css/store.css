@@ -92,7 +92,7 @@ body
     color: red;
   }
 
-/* ----- USŁUGI ------ */
+/* ----- CENNIK ------ */
 
 .servicesx
 {
@@ -190,7 +190,7 @@ body
     width: 100%;
 }
 
-.content {
+.c {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -202,22 +202,22 @@ body
     line-height: 40px;
     color: #ecf0f1;
   }
-  .content__container {
+  .cc {
     font-weight: 600;
     overflow: hidden;
     height: 40px;
     padding: 0 40px;
   }
-  .content__container:before {
+  .cc:before {
     content: "[";
     left: 0;
   }
-  .content__container:after {
+  .cc:after {
     content: "]";
     position: absolute;
     right: 0;
   }
-  .content__container:after, .content__container:before {
+  .cc:after, .cc:before {
     position: absolute;
     top: 0;
     color: #ed1818;
@@ -230,12 +230,12 @@ body
     animation-duration: 2s;
     animation-iteration-count: infinite;
   }
-  .content__container__text {
+  .cc-text {
     display: inline;
     float: left;
     margin: 0;
   }
-  .content__container__list {
+  .cc-list {
     margin-top: 0;
     padding-left: 140px;
     text-align: left;
@@ -247,7 +247,7 @@ body
     animation-duration: 10s;
     animation-iteration-count: infinite;
   }
-  .content__container__list__item {
+  .cc-li {
     line-height: 40px;
     margin: 0;
   }
@@ -309,7 +309,7 @@ body
     }
   }
 
-/* ----- BUBBLES ------ */
+/* ----- BACKGROUND WRAP ------ */
 
   #background-wrap {
     bottom: 0;

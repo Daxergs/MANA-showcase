@@ -1,3 +1,6 @@
+
+/* --------- Zmienne ---------*/
+
 let elem = document.querySelector(".animate");
 let experience = document.getElementById("experience");
 let header = document.querySelector("#header");
@@ -11,38 +14,40 @@ let aleft = document.querySelector(".aleft");
 let aright = document.querySelector(".aright");
 let pulse = document.querySelector(".btn-arrow-pulse");
 
+/* -------------------------consoleText-*/
+
 consoleText(['Mateusz Nakonieczny'], 'text',['white']);
-function consoleText(words, id, colors) {
+function consoleText(words, id, colors) { /* Funkcja animacji "pisania" tekstu */
   if (colors === undefined) colors = ['#fff'];
-  var visible = true;
-  var con = document.getElementById('console');
-  var letterCount = 1;
-  var x = 1;
-  var waiting = false;
-  var target = document.getElementById(id)
-  target.setAttribute('style', 'color:' + colors[0])
+  let visible = true;
+  let con = document.getElementById('console');
+  let letterCount = 1;
+  let x = 1;
+  let waiting = false;
+  let target = document.getElementById(id)
+  target.setAttribute('style','color:'+colors[0])
   window.setInterval(function() {
-    if (letterCount === 0 && waiting === false) {
+    if (letterCount===0&&waiting===false) {
       waiting = true;
       target.innerHTML = words[0].substring(0, letterCount)
       window.setTimeout(function() {
-        var usedColor = colors.shift();
-        colors.push(usedColor);
-        var usedWord = words.shift();
-        words.push(usedWord);
-        x = 1;
-        target.setAttribute('style', 'color:' + colors[0])
-        letterCount += x;
-        waiting = false;
+         let usedColor = colors.shift();
+         colors.push(usedColor);
+         let usedWord = words.shift();
+          words.push(usedWord);
+         x = 1;
+         target.setAttribute('style', 'color:' + colors[0])
+         letterCount += x;
+         waiting = false;
       }, 1000)
-    } else if (letterCount === words[0].length + 1 && waiting === false) {
+    } else if (letterCount===words[0].length+1&&waiting===false) {
       waiting = true;
       window.setTimeout(function() {
         x = -1;
         letterCount += x;
         waiting = false;
       }, 1000)
-    } else if (waiting === false) {
+    } else if (waiting===false) {
       target.innerHTML = words[0].substring(0, letterCount)
       letterCount += x;
     }
@@ -80,7 +85,7 @@ function store()
     }
 }
 
-function intro()
+function intro() /* Animacja intra na głównej stronie */
 {
     let top = document.getElementById("top");
     let contact = document.getElementById("contact");
@@ -91,7 +96,7 @@ function intro()
     let inter = setInterval(up,1);
     let opacity = setInterval(opa,100);
     top.style.width="100%";
-    function up()
+    function up() /* Funkcja podnoszenia bloku intra */
     {
         if(pos == -500)
         {
@@ -103,7 +108,7 @@ function intro()
             introbox.style.top=pos+'px';
         }
     }
-    function opa()
+    function opa() /* Funkcja pokazująca ukryte bloki */
     {
         if(pos == -500){
         if(header.style.opacity == 1)
@@ -127,7 +132,7 @@ function intro()
     }
 }
 
-function myMove() {
+function myMove() { /* Wsuwanie intra na starcie strony */
     let pos = 900;
     let id = setInterval(frame, 100/60);
     function frame() {
