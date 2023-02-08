@@ -110,6 +110,7 @@ body
     margin: 35px;
     transition: 1s;
     float: right;   
+    cursor: none;
 }
 
 #header * {
