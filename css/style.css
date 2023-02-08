@@ -1,3 +1,71 @@
+.mana-cursor {
+    pointer-events: none;
+    position: fixed;
+    display: block;
+    border-radius: 0;
+    top: 0;
+    left: 0;
+    z-index: 35;  
+  }
+  
+  .mana-dif{
+    mix-blend-mode: difference;
+  }
+  
+  .mana-circle {
+      transform-origin: center;
+      position: absolute;
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 20px;
+  }
+  
+  .mana-transform{
+    animation: border-transform 3s linear infinite;
+  }
+  
+  @keyframes border-transform {
+    0%,
+    100% {
+      border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+    }
+    14% {
+      border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
+    }
+    28% {
+      border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
+    }
+    42% {
+      border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
+    }
+    56% {
+      border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
+    }
+    70% {
+      border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+    }
+    84% {
+      border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+    }
+  }
+  
+  .mana-scale{
+    transition: .5s ease;
+    transform: scale(1.6);
+  }
+  
+  .mana-outline{
+    transform:scale(1.9);
+    background-color: transparent;
+  }
+  
+  
+  .mana-nocursor{
+    cursor:none;
+  }
+/* ---------- */
+
 html
 {
     margin: 0;
@@ -15,6 +83,7 @@ body
     background-color: #212529;
     color: white;
     font-family: Arial;
+    cursor: none;
 }
 
 /* ----- HEADER ------ */
@@ -149,6 +218,7 @@ body
 	height: 0;
 	padding: 35px;
 	text-decoration: none;
+  cursor: none;
 	border-radius: 50%;
 	animation-name: pulse;
 	animation-duration: 1.5s;
@@ -230,6 +300,7 @@ body
 
   .btn
 {
+  cursor: none;
     -webkit-box-shadow: inset -21px 8px 24px 0px rgba(107, 17, 17, 1);
     -moz-box-shadow: inset -21px 8px 24px 0px rgba(107, 17, 17, 1);
     box-shadow: inset -21px 8px 24px 0px rgba(107, 17, 17, 1);
@@ -240,7 +311,6 @@ body
     color: white;
     background-color: rgb(231, 37, 37);
     transition: 1s;
-    cursor: pointer;
     border-radius: 15px;
     position: relative;
     transition: all 1s;
@@ -449,7 +519,6 @@ flex-direction: column;
 
 .faq-page {
     color: rgb(255, 255, 255);
-    cursor: pointer;
     padding: 30px 120px;
     width: 60%;
     border: 5px rgb(255, 255, 255) solid;
@@ -523,6 +592,7 @@ transition: 1s;
     font-size: 70px;
     margin: 160px 250px 250px 250px;
     transition: 0.5s;
+    cursor: none;
 }
 
 #projects i:hover
@@ -536,17 +606,19 @@ transition: 1s;
 {
     background: none;
     border:none; 
+    cursor: none;
 }
 
 /* ----- STOPKA ------ */
 
 .footer
 {
-    height: 290px;
+    height: 320px;
     margin-top: 15px;
     display: flex;
     color: white;
     opacity: 0;
+    cursor: none;
 }
 
 .ft-el 
@@ -566,12 +638,14 @@ transition: 1s;
     text-decoration:none;
     color: white;
     transition: 0.5s;
+    cursor: none;
 }
 
 .ft-el a:hover
 {
     font-size: 35px;
     transition: 0.5s;
+    cursor: none;
 }
 
 .fa-sharp
